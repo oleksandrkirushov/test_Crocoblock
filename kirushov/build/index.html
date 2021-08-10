@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>test_Crocoblock</title>
+    </head>
+    <body class="page">
+        <header class="header" id="header">
+            <div class="header__wrapp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2 contact">
+                            <p class="contact__text">Calls are free of charge 0-800-600-505</p>
+                        </div>
+                        <nav class="col-10 menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#bookListing" class="menu__link" name="bookListing">
+                                        <span class="menu__link-text">Book Listing</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#singleBook" class="menu__link" name="singleBook">
+                                        <span class="menu__link-text">Single Book</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#blog" class="menu__link" name="blog">
+                                        <span class="menu__link-text">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#login" class="menu__link" name="Login">
+                                        <span class="menu__link-text">Login</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 logo">
+                            <a href="#header" class="logo__link">
+                                <img src="./image/logo_header.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="col-8 search">
+                            <button class="search__btn-all">
+                                <img src="./image/Category.svg" alt="icon"> All Books</button>
+                            <form class="search__form" action="#" method="GET">
+                                <div class="search__form-wrapp">
+                                    <input class="search__input" type="search" placeholder="I’m looking for...">
+                                    <button class="search__btn">
+                                        <span class="search__btn-text">Search</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-2 header__shoping">
+                            <a href="#" class="saved">
+                                <img class="saved__img" src="./image/saved.svg" alt="saved-icon">
+                            </a>
+                            <a href="#" class="cart">
+                                <img class="cart__img" src="./image/cart.svg" alt="cart-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="bannerAndMenu">
+                <div class="container">
+                    <div class="row">
+                        <nav class="col-3 mainMenu">
+                            <ul class="mainMenu__list">
+                                <li class="mainMenu__item">
+                                    <a href="#" class="mainMenu__link" name="books">
+                                        <span class="mainMenu__link-text">Books</span>
+                                    </a>
+                                </li>
+                                <li class="mainMenu__item">
+                                    <a href="#" class="mainMenu__link" name="popular">
+                                        <span class="mainMenu__link-text">Popular</span>
+                                    </a>
+                                </li>
+                                <li class="mainMenu__item">
+                                    <a href="#" class="mainMenu__link" name="sale">
+                                        <span class="mainMenu__link-text">Sale</span>
+                                    </a>
+                                </li>
+                                <li class="mainMenu__item">
+                                    <a href="#" class="mainMenu__link" name="new">
+                                        <span class="mainMenu__link-text">New</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-9 banner ">
+                        <div class="banner__items">
+                            <h3 class="banner__title">Limited-time deal</h3>
+                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                        </div>
+                        <div class="banner__items">
+                            <h3 class="banner__title">Limited-time deal</h3>
+                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                        </div>
+                        <div class="banner__items">
+                            <h3 class="banner__title">Limited-time deal</h3>
+                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bestSellers">
+                <div class="container">
+                    <h2 class="bestSellers__title">Best Sellers</h2>
+                    <div class="book__slider">
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_01.png" alt="book cover" class="book__img">
+                                <h3 class="book__title"></h3>
+                                <p class="book__author"></p>
+                            </a>
+                            <div class="book__priceAndRaiting">
+                                <p class="book__price"></p>
+                                <span class="book__raiting"></span>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart">
+                                    <span class="book__btn-cart-text"></span>
+                                </button>
+                                <button class="book__btn-saved"></button>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_02.png" alt="book cover" class="book__img">
+                                <h3 class="book__title"></h3>
+                                <p class="book__author"></p>
+                            </a>
+                            <div class="book__priceAndRaiting">
+                                <p class="book__price"></p>
+                                <span class="book__raiting"></span>
+                            </div>
+                            <div class="book__btn"><button class="book__btn-cart"><span
+                                        class="book__btn-cart-text"></span></button><button
+                                    class="book__btn-saved"></button></div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_03.png" alt="book cover" class="book__img">
+                                <h3 class="book__title"></h3>
+                                <p class="book__author"></p>
+                            </a>
+                            <div class="book__priceAndRaiting">
+                                <p class="book__price"></p>
+                                <span class="book__raiting"></span>
+                            </div>
+                            <div class="book__btn"><button class="book__btn-cart"><span
+                                        class="book__btn-cart-text"></span></button><button
+                                    class="book__btn-saved"></button></div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_04.png" alt="book cover" class="book__img">
+                                <h3 class="book__title"></h3>
+                                <p class="book__author"></p>
+                            </a>
+                            <div class="book__priceAndRaiting">
+                                <p class="book__price"></p>
+                                <span class="book__raiting"></span>
+                            </div>
+                            <div class="book__btn"><button class="book__btn-cart"><span
+                                        class="book__btn-cart-text"></span></button><button
+                                    class="book__btn-saved"></button></div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_05.png" alt="book cover" class="book__img">
+                                <h3 class="book__title"></h3>
+                                <p class="book__author"></p>
+                            </a>
+                            <div class="book__priceAndRaiting">
+                                <p class="book__price"></p>
+                                <span class="book__raiting"></span>
+                            </div>
+                            <div class="book__btn"><button class="book__btn-cart"><span
+                                        class="book__btn-cart-text"></span></button><button
+                                    class="book__btn-saved"></button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
