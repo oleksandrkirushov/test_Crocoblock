@@ -1,0 +1,243 @@
+.bestSellers__title,
+.hotNewReleases__title,
+.relatedBooks__title {
+    font-weight: 600;
+    font-size: 34px;
+    color: #2E3741;
+    margin-top: 45px;
+
+}
+
+.book {
+    &__slider {
+        margin: 30px 0 0;
+
+        & .slick-arrow {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #2E3741;
+            opacity: .4;
+            z-index: 10;
+
+            &:hover {
+                opacity: 1;
+                background-color: #E6524B;
+            }
+        }
+
+        & .slick-prev:before,
+        & .slick-next:before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+        }
+
+        & .slick-prev {
+            left: 0px;
+            top: 127px;
+
+            &:before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-25%, -50%) rotate(45deg);
+                border: 2px solid #FFFFFF;
+                border-top: transparent;
+                border-right: transparent;
+            }
+        }
+
+        & .slick-next {
+            right: 0px;
+            top: 127px;
+
+            &:before {
+                top: 50%;
+                right: 50%;
+                transform: translate(25%, -50%) rotate(45deg);
+                border: 2px solid #FFFFFF;
+                border-bottom: transparent;
+                border-left: transparent;
+            }
+        }
+
+        &.slick-initialized.slick-dotted.slick-slider {
+            margin-bottom: 39px;
+        }
+
+        & .slick-dots {
+            bottom: -62px;
+
+            & li button:before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                border: 1px solid #D0DBE2;
+                border-radius: 50%;
+                opacity: 1;
+
+            }
+        }
+
+        & .slick-dots li.slick-active button:before {
+            opacity: 1;
+            background-color: #D0DBE2;
+        }
+
+        & .slick-dots li {
+            margin: 0;
+        }
+    }
+
+    &__items {
+        max-width: 212px;
+        position: relative;
+
+    }
+
+    &__link {
+        display: block;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #2E3741;
+        margin-top: 13px;
+    }
+
+    &__author {
+        color: #737E89;
+        line-height: 1;
+    }
+
+    &__priceAndRating {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 18px;
+        color: #E6524B;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+
+        &-cart {
+            width: 155px;
+            background-color: #E6524B;
+        }
+
+        &-cart,
+        &-saved {
+            height: 42px;
+        }
+
+        &-saved {
+            width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: rgb(60, 199, 199);
+            }
+        }
+
+    }
+
+    &__tag {
+        position: absolute;
+        top: 10px;
+        right: -6px;
+    }
+
+    &__tag-figure {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-width: 13px 69px 13px 10px;
+        border-radius: 4px;
+        border-style: solid;
+
+        &::before {
+            content: '';
+            font-weight: 600;
+            color: #ffffff;
+            position: absolute;
+            top: -13px;
+            left: 7px;
+        }
+
+        &-popular {
+            border-color: #1b417a #1b417a #1b417a transparent;
+
+            &::before {
+                content: "Popular";
+            }
+        }
+
+        &-new {
+            border-color: #077C52 #077C52 #077C52 transparent;
+
+            &::before {
+                content: "New";
+                left: 14px;
+            }
+        }
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 20px;
+    font-size: 26px;
+    color: #2E3741;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.check~label::before {
+    opacity: 1;
+}
+
+.relatedBooks {
+    &__wrapp {
+        padding-bottom: 103px;
+    }
+
+    & .book__title {
+        line-height: 1.45;
+    }
+}

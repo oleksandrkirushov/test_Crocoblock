@@ -1,0 +1,116 @@
+.bestBooks {
+    &__title {
+        font-weight: 600;
+        font-size: 34px;
+        color: #2E3741;
+        margin-top: 30px;
+    }
+
+    &__wrapp {
+        position: relative;
+        padding-bottom: 68px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: calc(100% - 30px);
+            height: 1px;
+            top: 132px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #D0DBE2;
+        }
+    }
+
+    &__menu {
+        &-list {
+            margin-top: 45px;
+        }
+
+        &-items:not(:last-child)>a {
+            border-bottom: 1px solid #D0DBE2;
+        }
+
+        &-link {
+            display: block;
+            padding: 10px 21px;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%) rotate(-45deg);
+                border: 2px solid #373737;
+                border-left: transparent;
+                border-top: transparent;
+                visibility: hidden;
+            }
+
+            &:hover:before {
+                visibility: visible;
+            }
+
+            &:focus {
+                background-color: #E6524B;
+            }
+
+            &:focus .bestBooks__menu-text {
+                color: #FFFFFF;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        &-text {
+            color: #373737;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 46px;
+        grid-row-gap: 54px;
+        grid-column-gap: 50px;
+    }
+
+    &__link {
+        display: block;
+        width: 149px;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 18px;
+        color: #2E3741;
+        line-height: 1.1;
+        margin-top: 7px;
+    }
+
+    &__author {
+        color: #737E89;
+        line-height: 2;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 18px;
+        color: #E6524B;
+    }
+
+}

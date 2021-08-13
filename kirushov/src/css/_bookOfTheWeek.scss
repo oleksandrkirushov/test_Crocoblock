@@ -1,0 +1,80 @@
+.bookOfTheWeek {
+    &__wrapp {
+        margin-top: 56px;
+        background-image: url('../image/bookOfTheWeek.png');
+        background-repeat: no-repeat;
+        background-size: 1266px auto;
+        border-radius: 2px;
+        position: relative;
+        padding: 158px 71px 67px;
+    }
+
+    &__ribbon {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-width: 30px 23px 30px 294px;
+        border-radius: 4px;
+        border-style: solid;
+        border-color: #339E98 transparent #339E98 #339E98;
+
+        &-wrapp {
+            position: absolute;
+            top: 44px;
+            left: 4px;
+        }
+
+        &-text {
+            position: absolute;
+            top: -20px;
+            right: 21px;
+            width: 206px;
+            font-weight: 500;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        color: #FFFFFF;
+        line-height: 1;
+    }
+
+    &__author {
+        font-weight: 500;
+        font-size: 18px;
+        color: #C6D8D8;
+    }
+
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        color: #E6524B;
+        margin-top: 20px;
+        line-height: 1;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        max-width: 386px;
+        margin-top: 27px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 23px;
+        width: 182px;
+        height: 42px;
+        border-radius: 2px;
+        background-color: #E6524B;
+
+    }
+
+
+}

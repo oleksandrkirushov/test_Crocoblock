@@ -1,13 +1,13 @@
 //Polygraphy
 
-$default-fonts-name:"Oswald";
+$default-fonts-name:"Poppins";
 $follbak: Arial,
 Helvetica,
 sans-serif;
 $default-fonts: $default-fonts-name,
 $follbak;
-$default-font-size: 16px;
-$default-line-height: 1.667;
+$default-font-size: 14px;
+$default-line-height: 1.68;
 
 $secondary-fonts-name: "Gotem";
 $secondary-fonts: $secondary-fonts-name,
@@ -37,6 +37,7 @@ $eastBay: #37437a;
 $grey: #b9bcd1;
 $horizon: #5585a2;
 $lightRed: #eb304d;
+$mandy:#E6524B;
 $malibu: #70bfff;
 $malibu02: #55B7FF;
 $mercury: #e8e8e8;
@@ -44,13 +45,16 @@ $mineShaft: #262626;
 $mineShaft02:#333333;
 $mineShaft03:#232323;
 $mineShaft03Opacity:rgba(35, 35, 35, .9);
+$mineShaft04:#373737;
 $outerSpace: #2b2d2d;
 $outrageousOrange: #ff6033;
 $pickledBluewood:#2C4058;
+$raven:#737E89;
 $red: red;
 $red01:#d62c40;
 $riverBed:#4B5562;
 $scorpion: #5a5a5a;
+$silver01:#C0C0C0;
 $silverOpacity432:rgba(128, 128, 128, 0.432);
 $silverChalice: #9d9d9d;
 $spunPearl:#aaa6bd;
@@ -78,23 +82,29 @@ $blizzardBlue: rgba(143, 233, 235, 0.986);
 
 
 
+$bgHeader:$mineShaft04;
+$textColorContact:$silver01;
 $textColorWhite: $white;
-$colorBorderHeader: $geyser;
-$colorBeforeMenu:$darkgreen;
-$bgHomeBefore:$midnight;
-$textColorHome: $springWood;
-$bgPopUp:rgba(0, 0, 0, .8);
-$bgBtnPopUp:$apple;
-$bgHoverBtnpopUp:$bilbao;
-$bgInputPopUp:$silverOpacity432;
-$bgHoverInputPopUp:$cruise;
-$bgPopUpCloseX:$riverBed;
-$bgSearch:$seaweed;
-$bgHoverInputSearch:$blizzardBlue;
-$bgHoverBtnSearch:$darkgreen;
-$textColorFooter:$dingley;
-$borderColorFooterInput:$greenMist;
-$fillHoverSvg:$apricot;
+$textColorPlaceh:$raven;
+$bgColorBtnHeader:$mandy;
+
+
+// $colorBorderHeader: $geyser;
+// $colorBeforeMenu:$darkgreen;
+// $bgHomeBefore:$midnight;
+// $textColorHome: $springWood;
+// $bgPopUp:rgba(0, 0, 0, .8);
+// $bgBtnPopUp:$apple;
+// $bgHoverBtnpopUp:$bilbao;
+// $bgInputPopUp:$silverOpacity432;
+// $bgHoverInputPopUp:$cruise;
+// $bgPopUpCloseX:$riverBed;
+// $bgSearch:$seaweed;
+// $bgHoverInputSearch:$blizzardBlue;
+// $bgHoverBtnSearch:$darkgreen;
+// $textColorFooter:$dingley;
+// $borderColorFooterInput:$greenMist;
+// $fillHoverSvg:$apricot;
 
 $color-4: #eead68;
 $color-3: #eec368;

@@ -5,38 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
         <link rel="stylesheet" href="css/style.css">
-        <title>test_Crocoblock</title>
+        <title>test_Crocoblock_Kirushov</title>
     </head>
     <body class="page">
         <header class="header" id="header">
             <div class="header__wrapp">
-                <div class="container">
+                <div class="my-container header__container">
                     <div class="row">
-                        <div class="col-2 contact">
-                            <p class="contact__text">Calls are free of charge 0-800-600-505</p>
+                        <div class="col-3 header__contact">
+                            <p class="header__contact-text">Calls are free of charge</p>
+                            <p class="header__contact-number">0-800-600-505</p>
                         </div>
-                        <nav class="col-10 menu">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="#bookListing" class="menu__link" name="bookListing">
-                                        <span class="menu__link-text">Book Listing</span>
+                        <nav class="col-9 headMenu">
+                            <ul class="headMenu__list">
+                                <li class="headMenu__item">
+                                    <a href="#bookListing" class="headMenu__link" name="bookListing">
+                                        <span class="headMenu__link-text">Book Listing</span>
                                     </a>
                                 </li>
-                                <li class="menu__item">
-                                    <a href="#singleBook" class="menu__link" name="singleBook">
-                                        <span class="menu__link-text">Single Book</span>
+                                <li class="headMenu__item">
+                                    <a href="#singleBook" class="headMenu__link" name="singleBook">
+                                        <span class="headMenu__link-text">Single Book</span>
                                     </a>
                                 </li>
-                                <li class="menu__item">
-                                    <a href="#blog" class="menu__link" name="blog">
-                                        <span class="menu__link-text">Blog</span>
+                                <li class="headMenu__item">
+                                    <a href="#blog" class="headMenu__link" name="blog">
+                                        <span class="headMenu__link-text">Blog</span>
                                     </a>
                                 </li>
-                                <li class="menu__item">
-                                    <a href="#login" class="menu__link" name="Login">
-                                        <span class="menu__link-text">Login</span>
+                                <li class="headMenu__item">
+                                    <a href="#login" class="headMenu__link" name="Login">
+                                        <span class="headMenu__link-text">Login</span>
                                     </a>
                                 </li>
                             </ul>
@@ -49,23 +50,45 @@
                             </a>
                         </div>
                         <div class="col-8 search">
-                            <button class="search__btn-all">
+                            <button class="search__btn-all btn btn-outline-light">
                                 <img src="./image/Category.svg" alt="icon"> All Books</button>
                             <form class="search__form" action="#" method="GET">
                                 <div class="search__form-wrapp">
                                     <input class="search__input" type="search" placeholder="I’m looking for...">
-                                    <button class="search__btn">
-                                        <span class="search__btn-text">Search</span>
+                                    <button class="search__btn btn btn-danger">
+                                        <span class="search__btn-text ">Search</span>
                                     </button>
                                 </div>
                             </form>
                         </div>
                         <div class="col-2 header__shoping">
                             <a href="#" class="saved">
-                                <img class="saved__img" src="./image/saved.svg" alt="saved-icon">
+                                <svg class="header__shoping-svg" width="22" height="30" viewBox="0 0 22 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.4817 22.4781L1 28.2246V2C1 1.44772 1.44772 1 2 1H20C20.5523 1 21 1.44772 21 2V28.2246L11.5183 22.4781L11 22.164L10.4817 22.4781Z"
+                                        fill="transparent" stroke="white" stroke-width="2" />
+                                </svg>
+                                <div class="header__shoping-circle">
+                                    <div class="header__shoping-circle-after"></div>
+                                </div>
                             </a>
                             <a href="#" class="cart">
-                                <img class="cart__img" src="./image/cart.svg" alt="cart-icon">
+                                <svg class="header__shoping-svg" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.9544 21.9807H10.956C10.9573 21.9807 10.9586 21.9805 10.9599 21.9805H29.0195C29.4641 21.9805 29.8551 21.6855 29.9772 21.258L33.9616 7.31273C34.0475 7.01208 33.9873 6.68887 33.7992 6.43933C33.6109 6.18979 33.3165 6.04297 33.0039 6.04297H8.6572L7.94514 2.83861C7.84372 2.38284 7.43957 2.05859 6.97266 2.05859H0.996094C0.445908 2.05859 0 2.5045 0 3.05469C0 3.60487 0.445908 4.05078 0.996094 4.05078H6.17371C6.29977 4.61861 9.58118 19.3852 9.77002 20.2347C8.71141 20.6949 7.96875 21.7504 7.96875 22.9766C7.96875 24.6243 9.30933 25.9648 10.957 25.9648H29.0195C29.5697 25.9648 30.0156 25.5189 30.0156 24.9688C30.0156 24.4186 29.5697 23.9727 29.0195 23.9727H10.957C10.4079 23.9727 9.96094 23.5257 9.96094 22.9766C9.96094 22.4282 10.4063 21.982 10.9544 21.9807ZM31.6833 8.03516L28.268 19.9883H11.756L9.09973 8.03516H31.6833Z"
+                                        fill="white" />
+                                    <path
+                                        d="M9.96088 28.9531C9.96088 30.6008 11.3015 31.9414 12.9492 31.9414C14.5969 31.9414 15.9374 30.6008 15.9374 28.9531C15.9374 27.3054 14.5969 25.9648 12.9492 25.9648C11.3015 25.9648 9.96088 27.3054 9.96088 28.9531ZM12.9492 27.957C13.4983 27.957 13.9453 28.404 13.9453 28.9531C13.9453 29.5023 13.4983 29.9492 12.9492 29.9492C12.4 29.9492 11.9531 29.5023 11.9531 28.9531C11.9531 28.404 12.4 27.957 12.9492 27.957Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.0389 28.9531C24.0389 30.6008 25.3795 31.9414 27.0272 31.9414C28.6749 31.9414 30.0154 30.6008 30.0154 28.9531C30.0154 27.3054 28.6749 25.9648 27.0272 25.9648C25.3795 25.9648 24.0389 27.3054 24.0389 28.9531ZM27.0272 27.957C27.5763 27.957 28.0233 28.404 28.0233 28.9531C28.0233 29.5023 27.5763 29.9492 27.0272 29.9492C26.478 29.9492 26.0311 29.5023 26.0311 28.9531C26.0311 28.404 26.478 27.957 27.0272 27.957Z"
+                                        fill="white" />
+                                </svg>
+                                <div class="header__shoping-circle">
+                                    <div class="header__shoping-circle-after"></div>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -74,7 +97,7 @@
         </header>
         <main class="main">
             <section class="bannerAndMenu">
-                <div class="container">
+                <div class="my-container">
                     <div class="row">
                         <nav class="col-3 mainMenu">
                             <ul class="mainMenu__list">
@@ -100,108 +123,928 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="col-9 banner ">
-                        <div class="banner__items">
-                            <h3 class="banner__title">Limited-time deal</h3>
-                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
-                        </div>
-                        <div class="banner__items">
-                            <h3 class="banner__title">Limited-time deal</h3>
-                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
-                        </div>
-                        <div class="banner__items">
-                            <h3 class="banner__title">Limited-time deal</h3>
-                            <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                        <div class="col-9 banner ">
+                            <div class="banner__items">
+                                <div class="banner__title-wrapp">
+                                    <h3 class="banner__title">Limited-time deal</h3>
+                                    <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                                </div>
+                            </div>
+                            <div class="banner__items">
+                                <div class="banner__title-wrapp">
+                                    <h3 class="banner__title">Limited-time deal</h3>
+                                    <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                                </div>
+                            </div>
+                            <div class="banner__items">
+                                <div class="banner__title-wrapp">
+                                    <h3 class="banner__title">Limited-time deal</h3>
+                                    <h2 class="banner__title-main">Save up to 40% on print books</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="bestSellers">
-                <div class="container">
+                <div class="my-container">
                     <h2 class="bestSellers__title">Best Sellers</h2>
                     <div class="book__slider">
                         <div class="book__items">
-                            <a href="" class="book__link">
+                            <a href="#" class="book__link">
                                 <img src="./image/bs_01.png" alt="book cover" class="book__img">
-                                <h3 class="book__title"></h3>
-                                <p class="book__author"></p>
+                                <h3 class="book__title">One Vote Away</h3>
+                                <p class="book__author">Ted Cruz</p>
                             </a>
-                            <div class="book__priceAndRaiting">
-                                <p class="book__price"></p>
-                                <span class="book__raiting"></span>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$17.39</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="oneVoteAway" value="5" id="oneVoteAway5">
+                                    <label for="oneVoteAway5">☆</label>
+                                    <input type="radio" class="check" name="oneVoteAway" value="4" id="oneVoteAway4">
+                                    <label for="oneVoteAway4">☆</label>
+                                    <input type="radio" name="oneVoteAway" value="3" id="oneVoteAway3">
+                                    <label for="oneVoteAway3">☆</label>
+                                    <input type="radio" name="oneVoteAway" value="2" id="oneVoteAway2">
+                                    <label for="oneVoteAway2">☆</label>
+                                    <input type="radio" name="oneVoteAway" value="1" id="oneVoteAway1">
+                                    <label for="oneVoteAway1">☆</label>
+                                </div>
                             </div>
                             <div class="book__btn">
-                                <button class="book__btn-cart">
-                                    <span class="book__btn-cart-text"></span>
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
                                 </button>
-                                <button class="book__btn-saved"></button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
                             </div>
                         </div>
                         <div class="book__items">
                             <a href="" class="book__link">
                                 <img src="./image/bs_02.png" alt="book cover" class="book__img">
-                                <h3 class="book__title"></h3>
-                                <p class="book__author"></p>
+                                <h3 class="book__title">7 Secrets of Persuasion </h3>
+                                <p class="book__author">Ina Garten</p>
                             </a>
-                            <div class="book__priceAndRaiting">
-                                <p class="book__price"></p>
-                                <span class="book__raiting"></span>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$12.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="SecOfPer" value="5" id="SecOfPer5">
+                                    <label for="SecOfPer5">☆</label>
+                                    <input type="radio" class="check" name="SecOfPer" value="4" id="SecOfPer4">
+                                    <label for="SecOfPer4">☆</label>
+                                    <input type="radio" name="SecOfPer" value="3" id="SecOfPer3">
+                                    <label for="SecOfPer3">☆</label>
+                                    <input type="radio" name="SecOfPer" value="2" id="SecOfPer2">
+                                    <label for="SecOfPer2">☆</label>
+                                    <input type="radio" name="SecOfPer" value="1" id="SecOfPer1">
+                                    <label for="SecOfPer1">☆</label>
+                                </div>
                             </div>
-                            <div class="book__btn"><button class="book__btn-cart"><span
-                                        class="book__btn-cart-text"></span></button><button
-                                    class="book__btn-saved"></button></div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
                         </div>
                         <div class="book__items">
                             <a href="" class="book__link">
                                 <img src="./image/bs_03.png" alt="book cover" class="book__img">
-                                <h3 class="book__title"></h3>
-                                <p class="book__author"></p>
+                                <h3 class="book__title">American Dirt</h3>
+                                <p class="book__author">Jeanine Cummins</p>
                             </a>
-                            <div class="book__priceAndRaiting">
-                                <p class="book__price"></p>
-                                <span class="book__raiting"></span>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$16.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="amerDirt" value="5" id="amerDirt5">
+                                    <label for="amerDirt5">☆</label>
+                                    <input type="radio" class="check" name=" amerDirt" value="4" id="amerDirt4">
+                                    <label for="amerDirt4">☆</label>
+                                    <input type="radio" name="amerDirt" value="3" id="amerDirt3">
+                                    <label for="amerDirt3">☆</label>
+                                    <input type="radio" name="amerDirt" value="2" id="amerDirt2">
+                                    <label for="amerDirt2">☆</label>
+                                    <input type="radio" name="amerDirt" value="1" id="amerDirt1">
+                                    <label for="amerDirt1">☆</label>
+                                </div>
                             </div>
-                            <div class="book__btn"><button class="book__btn-cart"><span
-                                        class="book__btn-cart-text"></span></button><button
-                                    class="book__btn-saved"></button></div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
                         </div>
                         <div class="book__items">
                             <a href="" class="book__link">
                                 <img src="./image/bs_04.png" alt="book cover" class="book__img">
-                                <h3 class="book__title"></h3>
-                                <p class="book__author"></p>
+                                <h3 class="book__title">Surviving The Forest</h3>
+                                <p class="book__author">Adiva Geffen</p>
                             </a>
-                            <div class="book__priceAndRaiting">
-                                <p class="book__price"></p>
-                                <span class="book__raiting"></span>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$22.99</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="SurForest" value="5" id="SurForest5">
+                                    <label for="SurForest5">☆</label>
+                                    <input type="radio" class="check" name="SurForest" value="4" id="SurForest4">
+                                    <label for="SurForest4">☆</label>
+                                    <input type="radio" name="SurForest" value="3" id="SurForest3">
+                                    <label for="SurForest3">☆</label>
+                                    <input type="radio" name="SurForest" value="2" id="SurForest2">
+                                    <label for="SurForest2">☆</label>
+                                    <input type="radio" name="SurForest" value="1" id="SurForest1">
+                                    <label for="SurForest1">☆</label>
+                                </div>
                             </div>
-                            <div class="book__btn"><button class="book__btn-cart"><span
-                                        class="book__btn-cart-text"></span></button><button
-                                    class="book__btn-saved"></button></div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
                         </div>
                         <div class="book__items">
                             <a href="" class="book__link">
                                 <img src="./image/bs_05.png" alt="book cover" class="book__img">
-                                <h3 class="book__title"></h3>
-                                <p class="book__author"></p>
+                                <h3 class="book__title">The Secrets We Keep</h3>
+                                <p class="book__author">Kate Hewitt</p>
                             </a>
-                            <div class="book__priceAndRaiting">
-                                <p class="book__price"></p>
-                                <span class="book__raiting"></span>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$10.50</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="SecWeKeep" value="5" id="SecWeKeep5">
+                                    <label for="SecWeKeep5">☆</label>
+                                    <input type="radio" class="check" name=" SecWeKeep" value="4" id="SecWeKeep4">
+                                    <label for="SecWeKeep4">☆</label>
+                                    <input type="radio" name="SecWeKeep" value="3" id="SecWeKeep3">
+                                    <label for="SecWeKeep3">☆</label>
+                                    <input type="radio" name="SecWeKeep" value="2" id="SecWeKeep2">
+                                    <label for="SecWeKeep2">☆</label>
+                                    <input type="radio" name="SecWeKeep" value="1" id="SecWeKeep1">
+                                    <label for="SecWeKeep1">☆</label>
+                                </div>
                             </div>
-                            <div class="book__btn"><button class="book__btn-cart"><span
-                                        class="book__btn-cart-text"></span></button><button
-                                    class="book__btn-saved"></button></div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/bs_05.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">The Secrets We Keep</h3>
+                                <p class="book__author">Kate Hewitt</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$10.50</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="TSecWeKeep" value="5" id="TSecWeKeep5">
+                                    <label for="TSecWeKeep5">☆</label>
+                                    <input type="radio" class="check" name=" TSecWeKeep" value="4" id="TSecWeKeep4">
+                                    <label for="TSecWeKeep4">☆</label>
+                                    <input type="radio" name="TSecWeKeep" value="3" id="TSecWeKeep3">
+                                    <label for="TSecWeKeep3">☆</label>
+                                    <input type="radio" name="TSecWeKeep" value="2" id="TSecWeKeep2">
+                                    <label for="TSecWeKeep2">☆</label>
+                                    <input type="radio" name="TSecWeKeep" value="1" id="TSecWeKeep1">
+                                    <label for="TSecWeKeep1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </section>
+            <section class="hotNewReleases">
+                <div class="my-container">
+                    <h2 class="hotNewReleases__title">Hot New Releases</h2>
+                    <div class="book__slider">
+                        <div class="book__items">
+                            <a href="#" class="book__link">
+                                <img src="./image/hotNew_01.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">The Dip</h3>
+                                <p class="book__author">Seth Godin</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$17.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="theDip" value="5" id="theDip5">
+                                    <label for="theDip5">☆</label>
+                                    <input type="radio" class="check" name="theDip" value="4" id="theDip4">
+                                    <label for="theDip4">☆</label>
+                                    <input type="radio" name="theDip" value="3" id="theDip3">
+                                    <label for="theDip3">☆</label>
+                                    <input type="radio" name="theDip" value="2" id="theDip2">
+                                    <label for="theDip2">☆</label>
+                                    <input type="radio" name="theDip" value="1" id="theDip1">
+                                    <label for="theDip1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/hotNew_02.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">A Promised Land </h3>
+                                <p class="book__author">Barack Obama</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$27.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" class="check" name="ProLand" value="5" id="ProLand5">
+                                    <label for="ProLand5">☆</label>
+                                    <input type="radio" name="ProLand" value="4" id="ProLand4">
+                                    <label for="ProLand4">☆</label>
+                                    <input type="radio" name="ProLand" value="3" id="ProLand3">
+                                    <label for="ProLand3">☆</label>
+                                    <input type="radio" name="ProLand" value="2" id="ProLand2">
+                                    <label for="ProLand2">☆</label>
+                                    <input type="radio" name="ProLand" value="1" id="ProLand1">
+                                    <label for="ProLand1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/hotNew_03.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">The Office</h3>
+                                <p class="book__author">Robb Pearlman</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$12.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="TheOffice" value="5" id="TheOffice5">
+                                    <label for="TheOffice5">☆</label>
+                                    <input type="radio" class="check" name="TheOffice" value="4" id="TheOffice4">
+                                    <label for="TheOffice4">☆</label>
+                                    <input type="radio" name="TheOffice" value="3" id="TheOffice3">
+                                    <label for="TheOffice3">☆</label>
+                                    <input type="radio" name="TheOffice" value="2" id="TheOffice2">
+                                    <label for="TheOffice2">☆</label>
+                                    <input type="radio" name="TheOffice" value="1" id="TheOffice1">
+                                    <label for="TheOffice1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/hotNew_04.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">The Return </h3>
+                                <p class="book__author">Nicholas Sparks</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$16.00</p>
+                                <div class="rating book__rating">
+                                    <input type="TheReturn" class="check" name="rating" value="5" id="TheReturn5">
+                                    <label for="TheReturn5">☆</label>
+                                    <input type="radio" name="TheReturn" value="4" id="TheReturn4">
+                                    <label for="TheReturn4">☆</label>
+                                    <input type="radio" name="TheReturn" value="3" id="TheReturn3">
+                                    <label for="TheReturn3">☆</label>
+                                    <input type="radio" name="TheReturn" value="2" id="TheReturn2">
+                                    <label for="TheReturn2">☆</label>
+                                    <input type="radio" name="TheReturn" value="1" id="TheReturn1">
+                                    <label for="TheReturn1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/hotNew_05.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">7 Secrets of Persuasion </h3>
+                                <p class="book__author">Kristin Cavallari </p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$17.52</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="SecrOfPers" value="5" id="SecrOfPers5">
+                                    <label for="SecrOfPers5">☆</label>
+                                    <input type="radio" class="check" name="SecrOfPers" value="4" id="SecrOfPers4">
+                                    <label for="SecrOfPers4">☆</label>
+                                    <input type="radio" name="SecrOfPers" value="3" id="SecrOfPers3">
+                                    <label for="SecrOfPers3">☆</label>
+                                    <input type="radio" name="SecrOfPers" value="2" id="SecrOfPers2">
+                                    <label for="SecrOfPers2">☆</label>
+                                    <input type="radio" name="SecrOfPers" value="1" id="SecrOfPers1">
+                                    <label for="SecrOfPers1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/hotNew_01.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">7 Secrets of Persuasion </h3>
+                                <p class="book__author">Kristin Cavallari </p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$17.52</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" class="check" name="SecrePer" value="5" id="SecrePer5">
+                                    <label for="SecrePer5">☆</label>
+                                    <input type="radio" name="SecrePer" value="4" id="SecrePer4">
+                                    <label for="SecrePer4">☆</label>
+                                    <input type="radio" name="SecrePer" value="3" id="SecrePer3">
+                                    <label for="SecrePer3">☆</label>
+                                    <input type="radio" name="SecrePer" value="2" id="SecrePer2">
+                                    <label for="SecrePer2">☆</label>
+                                    <input type="radio" name="SecrePer" value="1" id="SecrePer1">
+                                    <label for="SecrePer1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-new"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bookOfTheWeek">
+                <div class="my-container">
+                    <div class="bookOfTheWeek__wrapp">
+                        <div class="bookOfTheWeek__ribbon-wrapp">
+                            <div class="bookOfTheWeek__ribbon">
+                                <h2 class="bookOfTheWeek__ribbon-text">Book of the Week</h2>
+                            </div>
+                        </div>
+                        <h2 class="bookOfTheWeek__title">Elsewhere</h2>
+                        <p class="bookOfTheWeek__author">by Dean Koontz</p>
+                        <p class="bookOfTheWeek__price">$18.99</p>
+                        <p class="bookOfTheWeek__text">The fate of the world is in the hands of a father and daughter in
+                            an epic novel of wonder and terror by Dean Koontz, the #1 New York Times bestselling master
+                            of suspense.
+                        </p>
+                        <a href="#" class="bookOfTheWeek__btn btn btn-danger">
+                            <span class="bookOfTheWeek__btn-text">View Details</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="bestBooks">
+                <div class="my-container bestBooks__wrapp">
+                    <h2 class="bestBooks__title">The Best Books of 2020</h2>
+                    <div class="row">
 
+                        <nav class="col-3 bestBooks__menu">
+                            <ul class="bestBooks__menu-list">
+                                <li class="bestBooks__menu-items">
+                                    <a href="#" class="bestBooks__menu-link">
+                                        <span class="bestBooks__menu-text">Paper Books</span>
+                                    </a>
+                                </li>
+                                <li class="bestBooks__menu-items">
+                                    <a href="#" class="bestBooks__menu-link">
+                                        <span class="bestBooks__menu-text">E-Books</span>
+                                    </a>
+                                </li>
+                                <li class="bestBooks__menu-items">
+                                    <a href="#" class="bestBooks__menu-link">
+                                        <span class="bestBooks__menu-text">Audio Books</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="col-9 bestBooks__list-wrapp">
+                            <ul class="bestBooks__list">
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_01.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">The Dancing Girls</h3>
+                                        <p class="bestBooks__author">M.M. Chouinard</p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.00</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_02.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">Zombies’ Day</h3>
+                                        <p class="bestBooks__author">PopularMMOs</p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.00</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_03.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">The Calculating Stars</h3>
+                                        <p class="bestBooks__author">Mary Robinette Kowal</p>
+                                    </a>
+                                    <p class="bestBooks__price">$12.79</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_04.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">The Obelisk Gate</h3>
+                                        <p class="bestBooks__author">N. K. Jemisin</p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.00</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_05.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">Where the Forest Meets...</h3>
+                                        <p class="bestBooks__author">Glendy Vanderah</p>
+                                    </a>
+                                    <p class="bestBooks__price">$15.99</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_06.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">Without a Summer </h3>
+                                        <p class="bestBooks__author">Mary Robinette Kowal </p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.00</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_07.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">It All Comes Back to You</h3>
+                                        <p class="bestBooks__author">Beth Duke </p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.32</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_08.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">We Were the Lucky Ones</h3>
+                                        <p class="bestBooks__author">Georgia Hunter </p>
+                                    </a>
+                                    <p class="bestBooks__price">$9.60</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_09.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">It's Not Supposed to...</h3>
+                                        <p class="bestBooks__author">Lysa TerKeurst </p>
+                                    </a>
+                                    <p class="bestBooks__price">$12.50</p>
+                                </li>
+                                <li class="bestBooks__items">
+                                    <a href="#" class="bestBooks__link">
+                                        <img src="./image/bestB_10.png" alt="bood cover" class="bestBooks__img">
+                                        <h3 class="bestBooks__heading">Everything Is F*cked</h3>
+                                        <p class="bestBooks__author">Mark Manson</p>
+                                    </a>
+                                    <p class="bestBooks__price">$13.00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="my-container news__wrapp">
+                    <div class="news__title-wrapp">
+                        <h2 class="news__title">News and Artiocles</h2>
+                        <a href="#" class="news__seeAll">
+                            <span class="news__seeAll-text">See All</span>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <ul class="posts__list">
+                            <li class="col-3 posts__item">
+                                <article class="posts__post">
+                                    <a href="#" class="posts__link">
+                                        <img src="./image/posts_01.png" alt="posts image" class="posts__img">
+                                        <div class="posts__tag posts__tag-awards badge badge-primary">
+                                            <span class="posts__tag-text">Awards</span></div>
+                                        <h3 class="posts__title">The National Book Award longlists</h3>
+                                        <div class="posts__data">| September 21, 2020</div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="col-3 posts__item">
+                                <article class="posts__post">
+                                    <a href="#" class="posts__link">
+                                        <img src="./image/posts_02.png" alt="posts image" class="posts__img">
+                                        <div class="posts__tag posts__tag-editors badge badge-primary">
+                                            <span class="posts__tag-text">Editors`
+                                                Picks</span>
+                                        </div>
+                                        <h3 class="posts__title">Weekend reading</h3>
+                                        <div class="posts__data">| September 21, 2020</div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="col-3 posts__item">
+                                <article class="posts__post">
+                                    <a href="#" class="posts__link">
+                                        <img src="./image/posts_03.png" alt="posts image" class="posts__img">
+                                        <div class="posts__tag posts__tag-interview badge badge-primary">
+                                            <span class="posts__tag-text">Interview</span></div>
+                                        <h3 class="posts__title">The National Book Award longlists</h3>
+                                        <div class="posts__data">| September 21, 2020</div>
+                                    </a>
+                                </article>
+                            </li>
+                            <li class="col-3 posts__item">
+                                <article class="posts__post">
+                                    <a href="#" class="posts__link">
+                                        <img src="./image/posts_04.png" alt="posts image" class="posts__img">
+                                        <div class="posts__tag posts__tag-awards badge badge-primary">
+                                            <span class="posts__tag-text">Awards</span></div>
+                                        <h3 class="posts__title">The best history books of September</h3>
+                                        <div class="posts__data">| September 21, 2020</div>
+                                    </a>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="relatedBooks">
+                <div class="my-container relatedBooks__wrapp">
+                    <h2 class="relatedBooks__title">Related Books</h2>
+                    <div class="book__slider">
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_01.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">The Fated Sky: A Lady Astronaut Novel</h3>
+                                <p class="book__author">Mary Robinette Kowal</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$3.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="theFatedSky" value="5" id="theFatedSky5">
+                                    <label for="theFatedSky5">☆</label>
+                                    <input type="radio" class="check" name="theFatedSky" value="4" id="theFatedSky4">
+                                    <label for="theFatedSky4">☆</label>
+                                    <input type="radio" name="theFatedSky" value="3" id="theFatedSky3">
+                                    <label for="theFatedSky3">☆</label>
+                                    <input type="radio" name="theFatedSky" value="2" id="theFatedSky2">
+                                    <label for="theFatedSky2">☆</label>
+                                    <input type="radio" name="theFatedSky" value="1" id="theFatedSky1">
+                                    <label for="theFatedSky1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_02.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">Glamour in Glass (Glamourist Histories...</h3>
+                                <p class="book__author">Mary Robinette Kowal</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price"></p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="glaminGla" value="5" id="glaminGla5">
+                                    <label for="glaminGla5">☆</label>
+                                    <input type="radio" class="check" name="glaminGla" value="4" id="glaminGla4">
+                                    <label for="glaminGla4">☆</label>
+                                    <input type="radio" name="glaminGla" value="3" id="glaminGla3">
+                                    <label for="glaminGla3">☆</label>
+                                    <input type="radio" name="glaminGla" value="2" id="glaminGla2">
+                                    <label for="glaminGla2">☆</label>
+                                    <input type="radio" name="glaminGla" value="1" id="glaminGla1">
+                                    <label for="glaminGla1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_03.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">In an Absent Dream (Wayward Children...</h3>
+                                <p class="book__author">Seanan McGuire</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$14.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="absentDream" value="5" id="absentDream5">
+                                    <label for="absentDream5">☆</label>
+                                    <input type="radio" class="check" name="absentDream" value="4" id="absentDream4">
+                                    <label for="absentDream4">☆</label>
+                                    <input type="radio" name="absentDream" value="3" id="absentDream3">
+                                    <label for="absentDream3">☆</label>
+                                    <input type="radio" name="absentDream" value="2" id="absentDream2">
+                                    <label for="absentDream2">☆</label>
+                                    <input type="radio" name="absentDream" value="1" id="absentDream1">
+                                    <label for="absentDream1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_04.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">Good Vibes, Good Life: How Self-Love Is the...</h3>
+                                <p class="book__author">Vex King</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$31.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="goodVibes" value="5" id="goodVibes5">
+                                    <label for="goodVibes5">☆</label>
+                                    <input type="radio" class="check" name="goodVibes" value="4" id="goodVibes4">
+                                    <label for="goodVibes4">☆</label>
+                                    <input type="radio" name="goodVibes" value="3" id="goodVibes3">
+                                    <label for="goodVibes3">☆</label>
+                                    <input type="radio" name="goodVibes" value="2" id="goodVibes2">
+                                    <label for="goodVibes2">☆</label>
+                                    <input type="radio" name="goodVibes" value="1" id="goodVibes1">
+                                    <label for="goodVibes1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_05.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">Get Out of Your Own Way: Overcoming... </h3>
+                                <p class="book__author">Mark Goulston</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$12.40</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="getOut" value="5" id="getOut5">
+                                    <label for="getOut5">☆</label>
+                                    <input type="radio" class="chech" name="getOut" value="4" id="getOut4">
+                                    <label for="getOut4">☆</label>
+                                    <input type="radio" name="getOut" value="3" id="getOut3">
+                                    <label for="getOut3">☆</label>
+                                    <input type="radio" name="getOut" value="2" id="getOut2">
+                                    <label for="getOut2">☆</label>
+                                    <input type="radio" name="getOut" value="1" id="getOut1">
+                                    <label for="getOut1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src=" ./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                        <div class="book__items">
+                            <a href="" class="book__link">
+                                <img src="./image/related_03.png" alt="book cover" class="book__img">
+                                <h3 class="book__title">In an Absent Dream (Wayward Children...</h3>
+                                <p class="book__author">Seanan McGuire</p>
+                            </a>
+                            <div class="book__priceAndRating">
+                                <p class="book__price">$14.00</p>
+                                <div class="rating book__rating">
+                                    <input type="radio" name="absentDream" value="5" id="absentDream5">
+                                    <label for="absentDream5">☆</label>
+                                    <input type="radio" class="check" name="absentDream" value="4" id="absentDream4">
+                                    <label for="absentDream4">☆</label>
+                                    <input type="radio" name="absentDream" value="3" id="absentDream3">
+                                    <label for="absentDream3">☆</label>
+                                    <input type="radio" name="absentDream" value="2" id="absentDream2">
+                                    <label for="absentDream2">☆</label>
+                                    <input type="radio" name="absentDream" value="1" id="absentDream1">
+                                    <label for="absentDream1">☆</label>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <button class="book__btn-cart btn btn-danger">
+                                    <span class="book__btn-cart-text">Add to Cart</span>
+                                </button>
+                                <button class="book__btn-saved btn btn-outline-danger">
+                                    <img class="book__btn-saved-img" src="./image/btn_saved.svg" alt="saved-icon">
+                                </button>
+                            </div>
+                            <div class="book__tag">
+                                <div class="book__tag-figure book__tag-figure-popular"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
-
+        <footer class="footer">
+            <div class="my-container footer__wrapp">
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="footer__title">Popular Categories</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Business & Money</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Children's Books</span></a></li>
+                            <li class="footer__item"><a href="" class="footer__link">
+                                    <span class="footer__text">Computers & Technology</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Cookbooks, Food & Wine</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Crafts, Hobbies & Home</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Education & Teaching</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3 class="footer__title">Customer service</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Help</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">FAQ</span></a></li>
+                            <li class="footer__item"><a href="" class="footer__link">
+                                    <span class="footer__text">Secure payment</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Delivery</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Returns & refunds</span></a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">
+                                    <span class="footer__text">Contact us</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <h3 class="footer__title">Follow us</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <span class="footer__text">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <span class="footer__text">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    <span class="footer__text">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">
+                                    <span class="footer__text">Pinterest</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="footer__title">Subscribe to our Newsletter</h3>
+                        <p class="footer__text">No spam, we promise</p>
+                        <form action="#" method="GET" class="footer__form">
+                            <input type="email" class="footer__input" placeholder="example@mail.com">
+                            <button class="footer__btn btn btn-danger" type="submit">
+                                <span class="footer__btn-text">Subscribe</span>
+                            </button>
+                        </form>
+                        <p class="footer__text footer__contact">Calls are free of charge
+                            0-800-600-505</p>
+                        <p class="footer__text">Working hours from 09:00 to 18:00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 footer__copyright">
+                        <p class="footer__text">Copyright © 2020 Crocoblock, Inc. All rights reserved</p>
+                        <div class="footer__link-wrapp">
+                            <a href="" class="footer__link"><span class="footer__text">Privacy Policy
+                                </span></a>
+                            <a href="#" class="footer__link"><span class="footer__text">Terms</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>

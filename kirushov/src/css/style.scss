@@ -1,5 +1,16 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'vars';
 @import 'mixin';
-@import 'grid';
+@import './grids';
 @import 'fonts';
 @import 'normalize';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import './typografy';
+@import './header';
+@import './bannerAndMenu';
+@import './bestSellers';
+@import './bookOfTheWeek';
+@import './bestBooks';
+@import './news';
+@import './footer';

@@ -21,7 +21,7 @@ $SM_width: 100%;
     box-sizing: border-box;
 }
 
-.container {
+.my-container {
     width: 1296px;
     margin: 0 auto;
     padding: $col-indent / 2;
@@ -59,7 +59,7 @@ $SM_width: 100%;
 //XL
 
 @media (max-width:$XL) {
-    .container {
+    .my-container {
         width: $XL_width;
     }
 
@@ -75,7 +75,7 @@ $SM_width: 100%;
 //LG
 
 @media (max-width: $LG) {
-    .container {
+    .my-container {
         width: $LG_width;
     }
 
@@ -91,7 +91,7 @@ $SM_width: 100%;
 //MD
 
 @media (max-width: $MD) {
-    .container {
+    .my-container {
         width: $MD_width;
     }
 
@@ -107,7 +107,7 @@ $SM_width: 100%;
 //SM
 
 @media (max-width: $SM) {
-    .container {
+    .my-container {
         width: $SM_width;
     }
 
