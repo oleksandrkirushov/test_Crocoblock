@@ -13,6 +13,4 @@ $(".book__slider").slick({
     dotsClass: "slick-dots",
     dots: true,
     slidesToScroll: 2,
-    // centerMode: true,
-    // // centerPadding: "10px",
 });
